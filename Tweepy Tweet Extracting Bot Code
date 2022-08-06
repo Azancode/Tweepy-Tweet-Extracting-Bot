@@ -17,5 +17,5 @@ for tweet in tweepy.Cursor(api.search_tweets,q=input(),count=100,
     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
     print(tweet.created_at, tweet.text)
 csvFile.close()
-    print (tweet.created_at, tweet.text)
-    time.sleep(6)
+print (tweet.created_at, tweet.text)
+time.sleep(6)
